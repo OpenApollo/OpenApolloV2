@@ -1,19 +1,18 @@
 # OpenApolloV2
 Repository for OpenApollo V2
 
-The OpenApollo Project aims to lower the barrier to entry for amateur rocketry and experimental aviation by providing an open-source hardware and software platform that removes much of the complexity involved in designing reliable flight electronics
+The OpenApollo Project strives to lower the barrier of entry for beginners into the world of amateur rocketry and aviaton, by supplying an open-sourced platform, which solves the hardest and most intimidating parts of designing a fast, reliable and redundant circuit.
 
-For many beginners, the electronics are one of the most intimidating parts of a project. A flight computer must operate reliably in harsh conditions, tolerate failures where possible, and incorporate appropriate safety features and redundancy. Designing such a system from scratch requires significant knowledge of embedded systems, PCB design, sensor fusion, and real-time software.
+Designing the flight controller of a rocket is often the most intimidating parts of such a project, as it needs to be absolutely foolproof. It requires in-depth knowledge to make a high-speed servo-gyro feedback loop for flight stabilization, implement redundancy and failure handling, and have it be able to work in harsh conditions.
 
-OpenApollo solves this by providing a pre-designed, open-source flight controller with a robust hardware platform and reusable low-level firmware (coming soon to V2 lol). Rather than spending months implementing sensor drivers, hardware abstraction layers, communication interfaces, and control loops, users can focus on writing high-level mission logic on a Raspberry Pi Compute Module 5. This separation keeps time-critical control on the microcontroller while allowing complex guidance, navigation, telemetry, or experimental algorithms to run on a powerful Linux computer
+OpenApollo V2 provides a pre-built, open-sourced platform to make one of the most difficult parts of amateur rocketry more tolerable. Designing low-level control is incredibly difficult for beginners, and OpenApollo solves this by doing that for you, while also providing a Raspberry Pi CM5, which communicates directly with the low-level hardware, making it possible to control an entire flight with easy, high-level code written on the CM5. This separation keeps time-critical control on the microcontroller while allowing complex guidance, navigation, telemetry, or complex algorithms/ML/MV to run on a powerful Linux computer 
 
-Compared to V1, OpenApollo V2 features:
 
- - A cleaner system architecture
- - A smaller, more compact PCB
- - Faster control and sensor feedback loops
- - Easier expansion for optional external sensors and peripheral control
- - Better separation between low-level real-time control and high-level mission software.
+V2 upgrades the following from V1:
+ - Better and smaller PCB size
+ - Faster sensor feedback loops, due to low-level control
+ - Easier connectivity for optional external sensors
+ - More seperation between high-level and low-level parts, so beginners have to look into low-level parts as little as possible
 
 V2 features the following parts:
  - I3G4250DTR Gyroscope
