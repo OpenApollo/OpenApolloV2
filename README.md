@@ -14,3 +14,13 @@ Compared to V1, OpenApollo V2 features:
  - Faster control and sensor feedback loops
  - Easier expansion for optional external sensors and peripheral control
  - Better separation between low-level real-time control and high-level mission software.
+
+V2 features the following parts:
+ - I3G4250DTR Gyroscope
+ - H3LIS200DLTR Accelerometer
+ - MS561101BA03-50 Barometer and temperature sensor
+ - STM32L412KBT6 as the Servo Feedback Controller [SFC]: Communicates with gyroscope and controls servo motors
+ - STM32F745VET6 as the Master Peripheral Controller [MPC]: Communicates with GPS, Barometer, Accelerometer, SFC, Raspberry Pi CM5, and operates 4 high-power MOSFET switches
+ - STM32G030F6P6 as a Flight Termination Controller [FTC]: Listens for heartbeats from both STMs, and the CM5, and can reboot both STMs, or trigger emergency protocols, icnluding controlling 3 MOSFET switches
+ - Raspberry Pi CM5 running Linux, which can be used for resource-intensive calculations, and to set a flight path or protocols with easy, high-level code
+ - HC-12 for telemetry (range can be increased greatly with an optimal 1/4th wavelength antenna)
