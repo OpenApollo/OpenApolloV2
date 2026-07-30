@@ -9,8 +9,8 @@ OpenApollo solves this by providing a pre-designed, open-source flight controlle
 
 Compared to V1, OpenApollo V2 features:
 
-  A cleaner system architecture
-  A smaller, more compact PCB
-  Faster control and sensor feedback loops
-  Easier expansion for optional external sensors and peripheral control
-  Better separation between low-level real-time control and high-level mission software.
+ - A cleaner system architecture
+ - A smaller, more compact PCB
+ - Faster control and sensor feedback loops
+ - Easier expansion for optional external sensors and peripheral control
+ - Better separation between low-level real-time control and high-level mission software.
