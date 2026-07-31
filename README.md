@@ -23,3 +23,7 @@ V2 features the following parts:
  - STM32G030F6P6 as a Flight Termination Controller [FTC]: Listens for heartbeats from both STMs, and the CM5, and can reboot both STMs, or trigger emergency protocols, icnluding controlling 3 MOSFET switches
  - Raspberry Pi CM5 running Linux, which can be used for resource-intensive calculations, and to set a flight path or protocols with easy, high-level code
  - HC-12 for telemetry (range can be increased greatly with an optimal 1/4th wavelength antenna)
+
+
+oshwlab (has not been approved yet, though I'm not sure whether that's even needed):
+https://oshwlab.com/ttomiz/project_hppayogv
