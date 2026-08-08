@@ -94,7 +94,7 @@ Bill of materials (Parts can be bought from standard electronics retailers, such
 ![PCB](./Circuit/PCB/PCB_OpenApolloV2.svg)
 
 Special assembly instructions:
- N/A
+- Soldering the LGA parts is best done with a stencil and hot plate, or at least a stencil and heat gun. Your mileage may vary.
 
 Terminology:
 - MPC: Master Peripheral Controller (STM32F745VET6)
