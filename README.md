@@ -96,3 +96,32 @@ Bill of materials (Parts can be bought from standard electronics retailers, such
 Special assembly instructions:
  N/A
 
+Terminology:
+- MPC: Master Peripheral Controller (STM32F745VET6)
+- SFC: Servo Feedback Controller (STM32L412KBT6)
+- FTC: Flight Termination Controller (STM32G030F6P6)
+- RPi CM5: Raspberry Pi Compute Module 5
+
+Basic usage instructions:
+- 5V input can be provided from the USB-C or header labeled "5V"
+- The header labeled "HV" is a high-voltage and high-current bus for powering servo motors, and MOSFET switches, also labeled with "HV"
+- Connectors labeled "IO" (such as "RPIO0", "MPCIO1") are for accessing GPIOs of their respective parts
+- The 2x5 GPIO labeled "SET" is for setting (tying to GND) the following on the RPi CM5 (from top to bottom):
+   - OSB_OTG_ID
+   - WL_nDisable
+   - BT_nDisable
+   - nRPIBOOT
+   - PMIC_Enable
+- All 3 sensors using I2C (Gyroscope, Accelerometer, Barometer) can have their addresses changed with their respective resistors
+- The RPi CM5's power state can be changed by pressing the button labeled "PWRB" or by shorting the pins labeled "PWR" The RPi CM5 also turns on by default on connecting 5V power
+- The LiPo header labeled "BAT" is for powering the RTC of the RPi CM5 and MPC. This can be disconnected during usage, and connected before removing power to keep the RTC running without needing a coin cell holder. **Uses standard 3V coin-cell battery voltage. Do not use battery with a voltage >3V**
+- Pins labeled "HC" are for soldering an HC-12 radio module.
+- Pins labeled "GPS" are for soldering a U-blox based GPS module
+- Pins labeled with "UART" or "I2C" are for connecting external sensors (only applicable to I2C), or for debugging communication issues on a hardware level
+- Resistors labeled "SHUNT0" and "SHUNT1" are for measuring the current being used by the servos in 2x4 groups. This is useful for zeroing servos without limit switches. A shunt resistor with a higher resistance will produce more accurate current measurements, but will also waste more power and generate more heat. On the contrary; a shunt resistor with a lower resistance will produce a less accurate current measurement, but will waste less power and generate less heat. It is recommended for the shunt resistor to stay within a range of 0.1R-0.25R. Wattage can be selected for your specific usage.
+- The power regulator labeled "U9_VREG" is a high-power LDO (5V --> 3.3V). This powers the MPC, the accelerometer, the barometer, the GPS module, and the HC-12 RF module. 1x5 header labeled "VOUT" can be used to draw power from this regulator's bus. Pins 1-2 and 4-5 are the regulator voltage, while pin 3 is GND. The regulator can handle up to 5A of current draw.
+- Pins labeled "MPCHV0" and "MPCHV1" are high-current MOSFET switches (IRL530NPBF) controlled by the MPC. These draw power form the HV line and feature a 3A flyback diode. Pins labeled "MPC5V0" and "MPC5V1" are also high-current MOSFET switches, but powered from the 5V line. These do not use a flyback diode. This naming scheme applies to the FTC as well, except for "MPC" being replaced by "FTC"
+- The 2x5 header labeled "LINK0" is for programming the MPC and SFC with an ST-Link V2
+- The 1x5 header labaled "LINK1" is for programming the FTC with an ST-Link V2.
+- The USB connector of the RPi CM5 is only capable of USB 2.0 communication speeds
+- Headers labeled "RST" are for resetting their respective STMs, while headers labeled "BOOT" are for changing the boot mode of their respective STMs
