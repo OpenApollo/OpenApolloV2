@@ -114,7 +114,7 @@ Basic usage instructions:
    - PMIC_Enable
 - All 3 sensors using I2C (Gyroscope, Accelerometer, Barometer) can have their addresses changed with their respective resistors
 - The RPi CM5's power state can be changed by pressing the button labeled "PWRB" or by shorting the pins labeled "PWR" The RPi CM5 also turns on by default on connecting 5V power
-- The LiPo header labeled "BAT" is for powering the RTC of the RPi CM5 and MPC. This can be disconnected during usage, and connected before removing power to keep the RTC running without needing a coin cell holder. **Uses standard 3V coin-cell battery voltage. Do not use battery with a voltage >3V**
+- The LiPo header labeled "BAT" is for powering the RTC of the RPi CM5 and MPC. This can be disconnected during usage, and connected before removing power to keep the RTC running without needing a coin cell holder. **Uses standard 3V coin-cell battery voltage. Do not use battery with a rated voltage above 3V**
 - Pins labeled "HC" are for soldering an HC-12 radio module.
 - Pins labeled "GPS" are for soldering a U-blox based GPS module
 - Pins labeled with "UART" or "I2C" are for connecting external sensors (only applicable to I2C), or for debugging communication issues on a hardware level
