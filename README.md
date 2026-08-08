@@ -91,3 +91,7 @@ Bill of materials:
 
 ![Schematic](./Circuit/Schematic/Schematic_OpenApolloV2.svg)
 ![PCB](./Circuit/PCB/PCB_OpenApolloV2.svg)
+
+Special assembly instructions:
+ N/A
+
