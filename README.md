@@ -29,7 +29,7 @@ oshwlab (has not been approved yet, though I'm not sure whether that's even need
 https://oshwlab.com/ttomiz/project_hppayogv
 
 
-Bill of materials (Parts can be bought from standard electronics retailers, such as Mouser, Digikey, LCSC; or even Amazon):
+Bill of materials (Parts can be bought from standard electronics retailers, such as Mouser, Digikey, LCSC, or even Amazon):
 |ID |Name                        |Designator                                                                                                                                                   |Footprint                           |Quantity|Manufacturer Part    |Manufacturer                |Supplier |Supplier Part      |Price |
 |---|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|--------|---------------------|----------------------------|---------|-------------------|------|
 |1  |HDR-F-2.54_1x2              |5V,GND0,GND1,HV                                                                                                                                              |HDR-F-2.54_1X2                      |4       |                     |                            |LCSC     |C49661             |0.065 |
