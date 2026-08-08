@@ -87,3 +87,7 @@ Bill of materials:
 |53 |NCP1117ST33T3G              |VREG1,VREG2                                                                                                                                                  |SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR  |2       |NCP1117ST33T3G       |onsemi(安森美)                 |LCSC     |C26537             |0.236 |
 |54 |8MHz                        |X1                                                                                                                                                           |HC-49S_L11.5-W4.7-P4.88             |1       |49SS-25.00-8-10-10/B |LIMING(利明)                  |LCSC     |C718637            |0.044 |
 |55 |CM5104032                   |U1                                                                                                                                                           |COMM-SMD_L55.0-W40.0_CM5            |1       |CM5104032            |Raspberry Pi(树莓派)           |LCSC     |C42394220          |      |
+
+
+![Schematic](./Circuit/Schematic/Schematic_OpenApolloV2.svg)
+![PCB](./Circuit/PCB/PCB_OpenApolloV2.svg)
