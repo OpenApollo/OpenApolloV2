@@ -10,7 +10,7 @@ OpenApollo V2 provides a pre-built, open-sourced platform to make one of the mos
 ![3D](./Circuit/PCB/3D_render.png)
 
 V2 upgrades the following from V1:
- - Better and smaller PCB size
+ - Smaller PCB size
  - Faster sensor feedback loops, due to low-level control
  - Easier connectivity for optional external sensors
  - More seperation between high-level and low-level parts, so beginners have to look into low-level parts as little as possible
