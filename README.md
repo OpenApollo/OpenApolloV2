@@ -7,7 +7,7 @@ Designing the flight controller of a rocket is often the most intimidating parts
 
 OpenApollo V2 provides a pre-built, open-sourced platform to make one of the most difficult parts of amateur rocketry more tolerable. Designing low-level control is incredibly difficult for beginners, and OpenApollo solves this by doing that for you, while also providing a Raspberry Pi CM5, which communicates directly with the low-level hardware, making it possible to control an entire flight with easy, high-level code written on the CM5. This separation keeps time-critical control on the microcontroller while allowing complex guidance, navigation, telemetry, or complex algorithms/ML/MV to run on a powerful Linux computer 
 
-![3D](./Circuit/PCB/3D_Render.png)
+![3D](./Circuit/PCB/3D_render.png)
 
 V2 upgrades the following from V1:
  - Better and smaller PCB size
