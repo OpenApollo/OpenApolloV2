@@ -10,7 +10,7 @@ OpenApollo V2 provides a pre-built, open-sourced platform to make one of the mos
 ![3D](./Circuit/PCB/3D_render.png)
 
 ------------------------------------------------------------------
-#**Upgrades**
+# **Upgrades**
 V2 upgrades the following from V1:
  - Smaller PCB size
  - Faster sensor feedback loops, due to low-level control
@@ -18,7 +18,7 @@ V2 upgrades the following from V1:
  - More seperation between high-level and low-level parts, so beginners have to look into low-level parts as little as possible
 
 ------------------------------------------------------------------
-#**General architecture**
+# **General architecture**
 V2 features the following parts:
  - I3G4250DTR Gyroscope
  - H3LIS200DLTR Accelerometer
@@ -34,7 +34,7 @@ oshwlab (has not been approved yet, though I'm not sure whether that's even need
 https://oshwlab.com/ttomiz/project_hppayogv
 
 
-#**Bill of materials**
+# **Bill of materials**
 ------------------------------------------------------------------------
 (Parts can be bought from standard electronics retailers, such as Mouser, Digikey, LCSC, or even Amazon):
 |ID |Name                        |Designator                                                                                                                                                   |Footprint                           |Quantity|Manufacturer Part    |Manufacturer                |Supplier |Supplier Part      |Price |Supplier link                                                                                                                 |
@@ -100,10 +100,10 @@ https://oshwlab.com/ttomiz/project_hppayogv
 ![Schematic](./Circuit/Schematic/Schematic_OpenApolloV2.svg)
 ![PCB](./Circuit/PCB/PCB_OpenApolloV2.svg)
 
-#**Special assembly instructions**:
+# **Special assembly instructions**:
 - Soldering the LGA parts is best done with a stencil and hot plate, or at least a stencil and heat gun. Your mileage may vary.
 
-#**Detailed description**
+# **Detailed description**
 -------------------------------------------------------------------------
 Terminology:
 - MPC: Master Peripheral Controller (STM32F745VET6)
