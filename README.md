@@ -9,12 +9,16 @@ OpenApollo V2 provides a pre-built, open-sourced platform to make one of the mos
 
 ![3D](./Circuit/PCB/3D_render.png)
 
+------------------------------------------------------------------
+#**Upgrades**
 V2 upgrades the following from V1:
  - Smaller PCB size
  - Faster sensor feedback loops, due to low-level control
  - Easier connectivity for optional external sensors
  - More seperation between high-level and low-level parts, so beginners have to look into low-level parts as little as possible
 
+------------------------------------------------------------------
+#**General architecture**
 V2 features the following parts:
  - I3G4250DTR Gyroscope
  - H3LIS200DLTR Accelerometer
@@ -30,7 +34,9 @@ oshwlab (has not been approved yet, though I'm not sure whether that's even need
 https://oshwlab.com/ttomiz/project_hppayogv
 
 
-Bill of materials (Parts can be bought from standard electronics retailers, such as Mouser, Digikey, LCSC, or even Amazon):
+#**Bill of materials**
+------------------------------------------------------------------------
+(Parts can be bought from standard electronics retailers, such as Mouser, Digikey, LCSC, or even Amazon):
 |ID |Name                        |Designator                                                                                                                                                   |Footprint                           |Quantity|Manufacturer Part    |Manufacturer                |Supplier |Supplier Part      |Price |Supplier link                                                                                                                 |
 |---|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|--------|---------------------|----------------------------|---------|-------------------|------|------------------------------------------------------------------------------------------------------------------------------|
 |1  |HDR-F-2.54_1x2              |5V,GND0,GND1,HV                                                                                                                                              |HDR-F-2.54_1X2                      |4       |                     |                            |LCSC     |C49661             |0.065 |                                                                                                                              |
@@ -89,14 +95,16 @@ Bill of materials (Parts can be bought from standard electronics retailers, such
 |54 |8MHz                        |X1                                                                                                                                                           |HC-49S_L11.5-W4.7-P4.88             |1       |49SS-25.00-8-10-10/B |LIMING(利明)                  |LCSC     |C718637            |0.044 |hestore.hu/prod_10021419.html                                                                                                 |
 |55 |CM5104032                   |U1                                                                                                                                                           |COMM-SMD_L55.0-W40.0_CM5            |1       |CM5104032            |Raspberry Pi(树莓派)           |LCSC     |C42394220          |      |eu.mouser.com/en/ProductDetail/Amphenol-FCI/10164227-1004A1RLF?qs=T%252BzbugeAwjgkdT9HF7lYAw%3D%3D                            |
 
-
+--------------------------------------------------------------------------------------------------------------
 
 ![Schematic](./Circuit/Schematic/Schematic_OpenApolloV2.svg)
 ![PCB](./Circuit/PCB/PCB_OpenApolloV2.svg)
 
-Special assembly instructions:
+#**Special assembly instructions**:
 - Soldering the LGA parts is best done with a stencil and hot plate, or at least a stencil and heat gun. Your mileage may vary.
 
+#**Detailed description**
+-------------------------------------------------------------------------
 Terminology:
 - MPC: Master Peripheral Controller (STM32F745VET6)
 - SFC: Servo Feedback Controller (STM32L412KBT6)
