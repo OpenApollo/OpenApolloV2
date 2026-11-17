@@ -12,3 +12,7 @@ Message I gave in #forge-checkpoint on slack AND dm'd my reviewer in response to
 
 The best I could do was go to EasyEDA's online page, which according to AI, was supposed to give me .epro when I downloaded it, but it just gave me a .zip with the exact same .json files that it gave me during a desktop app download. So I put that Zip into OpenApolloV2/Circuit/EasyEDA on github, named "OpenApolloV2.zip", and I even included a note.md to try to explain it. I also uploaded 2 files to OpenApolloV2/Circuit/Schematic, one I exported from EDA via: File/Export/EasyEDA, and one I exported via: File/File source.
 "
+
+-------------------------------
+
+To at least try to do something, I have exported the schematic in Altium's format (though EasyEDA says this is still in beta)
