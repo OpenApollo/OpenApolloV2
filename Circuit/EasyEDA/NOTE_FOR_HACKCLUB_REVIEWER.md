@@ -5,7 +5,7 @@ This is supposed to be the replacement of a .epro file, but even EasyEDA's own d
 
 ---------------------------------
 
-Message I gave in #forge-checkpoint on slack in response to the missing files:
+Message I gave in #forge-checkpoint on slack AND dm'd my reviewer in response to the missing files, neither of which have been responded to yet:
 
 "
 [...] after hours and hours of looking, I couldn't find an export for a .epro. Not in online or offline mode, not on Windows or Linux, not with AI help. Even some of EasyEDA's docs seem to be wrong and outdated (like this one, though it IS for EasyEDA Pro: https://prodocs.easyeda.com/en/faq/import-export/), while others that seem to be newer just show how to export the file source (this one: https://docs.easyeda.com/en/Export/Export-EasyEDA-Source-File/index.html).
